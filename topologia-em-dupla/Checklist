@@ -1,0 +1,46 @@
+-Montar a topologia
+
+-Ip, mascara e gateway nos computadores
+
+-configuraçoes dos switchs
+
+-Hostname:SW-1/2
+
+-senha na enable: rodrigo*enable
+
+-dominio:1rede.local
+
+service password-encryotion
+
+-colocar senha na console: RODRIGO*Console
+
+-configurar ip dos switch 
+ 
+-configurar a vty
+
+-configura ssh 
+
+- colocar chave no ssh
+
+configuração do RT-01
+
+hostaname: RT-01 
+
+dominio:1rede.local
+
+service password-encryotion
+
+-colocar senha na console: RODRIGO*Console
+
+-configurar ip do RT 
+
+configurar ssh
+
+- colocar chave no ssh
+
+
+
+
+
+
+
