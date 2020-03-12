@@ -4,9 +4,10 @@ configure terminal
 hostname RT-01
 enable secret RODRIGO*Enable
 ip domain-name 1rede.local
+username Rodrigo privilegi 15 secret RODRIGO*user
 line console 0
 password RODRIGO*Console
-login
+login local
 exit
 interface gigabitethernet 0/0
 ip address 192.168.0.1 255.255.255.0
@@ -19,7 +20,7 @@ exit
 line vty 0 15
 password RODRIGO*vty
 transport input ssh
-login
+login local
 exit
 crypto key generate rsa general-key modulus 1024
 service password-encryption
