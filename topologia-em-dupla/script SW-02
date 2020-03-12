@@ -4,9 +4,10 @@ configure terminal
 hostname SW-02
 enable secret RODRIGO*Enable
 ip domain-name 1rede.local
+username rodrigo privilege 15 secret RODRIGO*local
 line console 0
 password RODRIGO*Console
-login
+login local
 end
 configure terminal
 interface vlan 1
@@ -17,7 +18,7 @@ configure terminal
 line vty 0 15
 password RODRIGO*vty
 transport input ssh
-login
+login local
 exit
 crypto key generate rsa general-key modulus 1024
 service password-encryption
